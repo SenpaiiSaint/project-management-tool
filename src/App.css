@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* HEADER */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Kanban Board Container */
+.kanban-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Kanban Column Styles */
+.column {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    min-height: 400px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Task Card Styles */
+.task-card {
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.task-card:hover {
+    background-color: #dfe6e9;
+}
+
+.task-card h4{
+    margin: 0;
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+.task-card p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+form {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .kanban-board {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 90%;
+    }
+}
